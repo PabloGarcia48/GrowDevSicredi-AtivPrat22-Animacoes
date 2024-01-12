@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: absolute;
+    width: 1200px;
+    background-image: url(./img/toyStoryAndysRoomWallpaper.jpeg);
+}
+
+.logo {
+    position: absolute;
+    width: 300px;
+    height: 219px;
+    animation: logoEntrance 3s 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.BuzzFlyer {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    animation: buzzEntrance 3s 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+@keyframes logoEntrance {
+    0% {
+        transform: translate(2000px, 0px);
+    }
+    100% {
+        transform: translate(450px, 200px);
+    }
+}
+
+@keyframes buzzEntrance {
+    0% {
+        transform: translate(-1000px, 0px);
+        scale: 0.3;
+    }
+    70% {
+        transform: translate(700px, 1000px);
+        scale: 0.5;
+    }
+    100% {
+        transform: translate(1000px, 200px);
+        scale: 0.7;
+    }
+}
+
+@keyframes buzzRotation {
+    0% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(10deg);
+    }
+}
